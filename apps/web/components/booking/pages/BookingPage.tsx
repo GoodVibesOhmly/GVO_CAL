@@ -307,7 +307,7 @@ const BookingPage = (props: BookingPageProps) => {
                       }))
                   )}
                 />
-                <h2 className="mt-2 font-cal font-medium text-gray-500 dark:text-gray-300">
+                <h2 className="font-cal mt-2 font-medium text-gray-500 dark:text-gray-300">
                   {props.profile.name}
                 </h2>
                 <h1 className="mb-4 text-3xl font-semibold text-gray-800 dark:text-white">
@@ -366,7 +366,7 @@ const BookingPage = (props: BookingPageProps) => {
                         name="name"
                         id="name"
                         required
-                        className="block w-full rounded-sm border-gray-300 shadow-sm focus:border-brand focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
+                        className="focus:border-brand block w-full rounded-sm border-gray-300 shadow-sm focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
                         placeholder="John Doe"
                       />
                     </div>
@@ -381,7 +381,7 @@ const BookingPage = (props: BookingPageProps) => {
                       <EmailInput
                         {...bookingForm.register("email")}
                         required
-                        className="block w-full rounded-sm border-gray-300 shadow-sm focus:border-brand focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
+                        className="focus:border-brand block w-full rounded-sm border-gray-300 shadow-sm focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
                         placeholder="you@example.com"
                       />
                     </div>
@@ -439,7 +439,7 @@ const BookingPage = (props: BookingPageProps) => {
                             })}
                             id={"custom_" + input.id}
                             rows={3}
-                            className="block w-full rounded-sm border-gray-300 shadow-sm focus:border-brand focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
+                            className="focus:border-brand block w-full rounded-sm border-gray-300 shadow-sm focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
                             placeholder={input.placeholder}
                           />
                         )}
@@ -450,7 +450,7 @@ const BookingPage = (props: BookingPageProps) => {
                               required: input.required,
                             })}
                             id={"custom_" + input.id}
-                            className="block w-full rounded-sm border-gray-300 shadow-sm focus:border-brand focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
+                            className="focus:border-brand block w-full rounded-sm border-gray-300 shadow-sm focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
                             placeholder={input.placeholder}
                           />
                         )}
@@ -461,7 +461,7 @@ const BookingPage = (props: BookingPageProps) => {
                               required: input.required,
                             })}
                             id={"custom_" + input.id}
-                            className="block w-full rounded-sm border-gray-300 shadow-sm focus:border-brand focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
+                            className="focus:border-brand block w-full rounded-sm border-gray-300 shadow-sm focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
                             placeholder=""
                           />
                         )}
@@ -543,7 +543,7 @@ const BookingPage = (props: BookingPageProps) => {
                       {...bookingForm.register("notes")}
                       id="notes"
                       rows={3}
-                      className="block w-full rounded-sm border-gray-300 shadow-sm focus:border-brand focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
+                      className="focus:border-brand block w-full rounded-sm border-gray-300 shadow-sm focus:ring-black dark:border-gray-900 dark:bg-black dark:text-white sm:text-sm"
                       placeholder={t("share_additional_notes")}
                     />
                   </div>
